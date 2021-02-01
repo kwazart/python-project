@@ -21,17 +21,10 @@ while True:
 
 print(data_list)
 
-# flag for passing iterator index
-isPass = True
-
 is_even = len(data_list) % 2 == 0
 length = len(data_list) if is_even else len(data_list) - 1
 
-for i in range(length):
-    if isPass:
-        data_list[i], data_list[i+1] = data_list[i+1], data_list[i]
-        isPass = False
-    else:
-        isPass = True
+for i in range(0, length, 2):
+    data_list[i], data_list[i+1] = data_list[i+1], data_list[i]
 
 print(data_list)
