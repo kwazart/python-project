@@ -23,21 +23,15 @@ print(data_list)
 
 # flag for passing iterator index
 isPass = True
-new_list = list()
 
 is_even = len(data_list) % 2 == 0
 length = len(data_list) if is_even else len(data_list) - 1
 
-# copy changed elements to new list, but if old list is not even - > pass last element
 for i in range(length):
     if isPass:
-        new_list.append(data_list[i + 1])
-        new_list.append(data_list[i])
+        data_list[i], data_list[i+1] = data_list[i+1], data_list[i]
         isPass = False
     else:
         isPass = True
 
-if not is_even:
-    new_list.append(data_list[len(data_list) - 1])
-
-print(new_list)
+print(data_list)
