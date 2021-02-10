@@ -1,0 +1,11 @@
+Goodman 3100.12
+Dean 3400.45
+Hensley 3750.54
+Page 3600.80
+Cannon 3900.10
+Walker 3500.50
+Small 3400.50
+Whitehead 3440.30
+Barker 3850.70
+Snow 3600.90
+Harris 3700.00
